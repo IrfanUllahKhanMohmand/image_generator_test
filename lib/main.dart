@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: BlocProvider(
         create: (_) => ImageBloc(fetchImagesUseCase),
-        child: DesignScreen(),
+        child: const DesignScreen(),
       ),
     );
   }
