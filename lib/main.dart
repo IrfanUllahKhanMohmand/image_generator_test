@@ -37,7 +37,7 @@ class _DesignScreenState extends State<DesignScreen> {
     setState(() {
       isLoading = true;
     });
-
+    const unsplashApiKey = 'your_api_key_here';
     try {
       final response = await Dio().get(
         'https://api.unsplash.com/search/photos',
